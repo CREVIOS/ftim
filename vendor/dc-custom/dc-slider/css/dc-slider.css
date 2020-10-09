@@ -1,0 +1,1162 @@
+/*
+ * --------------------------------------------
+ * Plugin Name: DC SLIDER.
+ * Description: DC SLIDER – Responsive Layer Slider
+ * Version: 1.0
+ * Author: Zahidur Rahman
+ * Company: Organization
+ * Website: http://www.Organization.com
+ * --------------------------------------------
+ */
+/* dc slider */
+.dc-slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/* dc slide */
+.dc-slide{
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    transition: 0.5s opacity ease-in;
+}
+/* start: dc slider layer style */
+.dc-sloverlay{
+    width:100%;
+    height: 100%;
+}
+.dc-sl-inner{
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.dc-sl-inner > * {
+    position: absolute;
+    line-height: 1.2;
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+.dc-sl-inner * {
+    margin: 0 !important;
+}
+.dc-sl-inner a, .dc-sl-inner button{
+    position: absolute;
+}
+.sl-caption{
+    font-size: 40px;
+    color: #333;
+    top: 0;
+    left: 0;
+}
+.sl-desc{
+    font-size: 14px;
+    color: #333;
+    top: 0;
+    left: 0;
+}
+/* start: dc slider layer style */
+
+/* start: dc slider navigation */
+.dc-sl-nav{
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: 10px;
+    z-index: 2;
+}
+.dc-sl-nav ul {
+    list-style: none;
+    margin: 0;
+    clear: both;
+    display: table;
+    margin-left: -50%;
+    padding: 0;
+}
+.dc-sl-nav ul li{
+    float: left;
+    cursor: pointer;
+}
+.dc-sl-nav ul li:hover{
+    opacity: 1;
+}
+.dc-sl-nav ul li:last-child, .dc-sl-nav.dc-sl-round-nav ul li:last-child{
+    margin-right: 0;
+}
+
+.dc-sel-nav{
+    background: #000;
+}
+.dc-slprev, .dc-slnext{
+    top: 50%;
+    position: absolute;
+    margin-top: -30px;
+    font-size: 60px;
+    line-height: 60px;
+    background: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 2;
+}
+.dc-slprev.dc-sl-transparent-nav, .dc-slnext.dc-sl-transparent-nav{
+    background: none;
+    color: #fff;
+    text-shadow: 1px 1px 3px #666;
+    -moz-text-shadow: 1px 1px 3px #666;
+    -webkit-text-shadow: 1px 1px 3px #666;
+    -o-text-shadow: 1px 1px 3px #666;
+    -ms-text-shadow: 1px 1px 3px #666;
+}
+.dc-slprev:hover, .dc-slnext:hover{
+    opacity: 1;
+}
+.dc-slprev, .dc-slprev.dc-sl-round-nav{
+    left:0;
+    padding:0 20px 0 12px;
+    border-radius: 0 7px 7px 0;
+}
+.dc-slprev.dc-sl-round-nav{
+    border-radius: 50%;
+}
+.dc-slnext, .dc-slnext.dc-sl-round-nav {
+    right: 0;
+    padding:0 12px 0 20px;
+    border-radius: 7px 0 0 7px;
+}
+.dc-slnext.dc-sl-round-nav{
+    border-radius: 50%;
+}
+/* start: dc slider navigation */
+
+/* start: pagination */
+.dc-sl-nav ul li {
+  border: 1px solid #fff;
+  margin-right: 11px;
+  opacity: 0.5;
+  padding: 6px 27px;
+  border-radius: 2px;
+  background: #FFA800;
+}
+.dc-sl-nav.dc-sl-round-nav ul li, .dc-sl-nav.dc-sl-square-nav ul li {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 6px;
+  padding: 5px;
+}
+.dc-sl-nav.dc-sl-square-nav ul li{
+  border-radius: 0;
+}
+.dc-sl-nav ul .dc-sel-nav, .dc-sl-nav.dc-sl-round-nav ul .dc-sel-nav{
+    background: #FFA800;
+    opacity: 0.75;
+}
+/* end: pagination */
+
+/* start: pause control */
+.dc-slider-pause {
+    background: #ffa800 none repeat scroll 0 0;
+    border: 1px solid #fff;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -28px;
+    opacity: 0.5;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+}
+.dc-slider-pause:hover{
+    opacity: 1;
+}
+/* end: pause control */
+
+/*start: responsive*/
+@media screen and (max-width: 767px){
+    .dc-slprev, .dc-slnext {
+        font-size: 25px;
+        line-height: 45px;
+    }
+    
+    .dc-sl-nav ul li {
+        padding: 6px 15px;
+    }
+    .dc-slider-pause {
+        font-size: 10px;
+    }
+}
+/*end: responsive*/
+
+/* start: box with bg color */
+.dc-bx-white{
+    background: #ffffff;
+    padding: 10px 30px;
+}
+.dc-bx-black{
+    background: #000000;
+    padding: 10px 30px;
+}
+.dc-bx-blue{
+    background: #0D9EFF;
+    padding: 10px 30px;
+}
+.dc-bx-lightblue{
+    background: #0DC2FF;
+    padding: 10px 30px;
+}
+.dc-bx-yellow{
+    background: #FFC50D;
+    padding: 10px 30px;
+}
+.dc-bx-fadeyellow{
+    background: #EBD438;
+    padding: 10px 30px;
+}
+.dc-bx-orange{
+    background: #FFA800;
+    padding: 10px 30px;
+}
+.dc-bx-red{
+    background: #DD0D24;
+    padding: 10px 30px;
+}
+.dc-bx-lightred{
+    background: #FF0D0D;
+    padding: 10px 30px;
+}
+.dc-bx-purple{
+    background: #A061BA;
+    padding: 10px 30px;
+}
+.dc-bx-bluepurple{
+    background: #7A71BD;
+    padding: 10px 30px;
+}
+.dc-bx-green{
+    background: #0D9E6E;
+    padding: 10px 30px;
+}
+.dc-bx-lightgreen{
+    background: #0DCF6E;
+    padding: 10px 30px;
+}
+.dc-bx-pink{
+    background: #FF4897;
+    padding: 10px 30px;
+}
+.dc-bx-cyan{
+    background: #3EC8BE;
+    padding: 10px 30px;
+}
+.dc-bx-tan{
+    background: #9E6E0D;
+    padding: 10px 30px;
+}
+/* end: box with bg color */
+
+/* start: transparent box with dark and light color */
+.dc-bx-ts-darkwhite{
+    background: rgba(255,255,255,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightwhite{
+    background: rgba(255,255,255,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkblack{
+    background: rgba(0,0,0,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightblack{
+    background: rgba(0,0,0,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkblue{
+    background: rgba(13,158,255,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightblue{
+    background: rgba(13,158,255,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkyellow{
+    background: rgba(255,197,13,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightyellow{
+    background: rgba(255,197,13,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkorange{
+    background: rgba(255,168,0,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightorange{
+    background: rgba(255,168,0,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkred{
+    background: rgba(221,13,36,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightred{
+    background: rgba(221,13,36,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkpurple{
+    background: rgba(160,97,186,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightpurple{
+    background: rgba(160,97,186,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkgreen{
+    background: rgba(13,158,110,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightgreen{
+    background: rgba(13,158,110,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkpink{
+    background: rgba(255,72,151,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightpink{
+    background: rgba(255,72,151,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darkcyan{
+    background: rgba(62,200,190,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lightcyan{
+    background: rgba(62,200,190,0.5);
+    padding: 10px 30px;
+}
+.dc-bx-ts-darktan{
+    background: rgba(158,110,13,0.8);
+    padding: 10px 30px;
+}
+.dc-bx-ts-lighttan{
+    background: rgba(158,110,13,0.5);
+    padding: 10px 30px;
+}
+/* end: transparent bg color */
+
+/* start: box style with color */
+/*box rounded*/
+.dc-bx-rnded{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/*box extra large rounded*/
+.dc-bx-xl-rnded{
+    -moz-border-radius: 20%/50%;
+    -webkit-border-radius: 20%/50%;
+    border-radius: 20%/50%;
+}
+/*box ellipse*/
+.dc-bx-ellps{
+    border-radius: 50%;
+    text-align: center;
+    padding: 3% !important;
+    display: inline-block;
+}
+/*white angle*/
+.dc-bottom-white-rightangle,
+.dc-top-white-rightangle,
+.dc-bottom-white-leftangle,
+.dc-top-white-leftangle{
+    background: #fff;
+    padding: 10px 30px;
+}
+/*black angle*/
+.dc-bottom-black-rightangle,
+.dc-top-black-rightangle,
+.dc-bottom-black-leftangle,
+.dc-top-black-leftangle{
+    background: #000;
+    padding: 10px 30px;
+}
+/*blue angle*/
+.dc-bottom-blue-rightangle,
+.dc-top-blue-rightangle,
+.dc-bottom-blue-leftangle,
+.dc-top-blue-leftangle{
+    background: #0D9EFF;
+    padding: 10px 30px;
+}
+/*lightblue angle*/
+.dc-bottom-lightblue-rightangle,
+.dc-top-lightblue-rightangle,
+.dc-bottom-lightblue-leftangle,
+.dc-top-lightblue-leftangle{
+    background: #0DC2FF;
+    padding: 10px 30px;
+}
+/*yellow angle*/
+.dc-bottom-yellow-rightangle,
+.dc-top-yellow-rightangle,
+.dc-bottom-yellow-leftangle,
+.dc-top-yellow-leftangle{
+    background: #FFC50D;
+    padding: 10px 30px;
+}
+/*fadeyellow angle*/
+.dc-bottom-fadeyellow-rightangle,
+.dc-top-fadeyellow-rightangle,
+.dc-bottom-fadeyellow-leftangle,
+.dc-top-fadeyellow-leftangle{
+    background: #EBD438;
+    padding: 10px 30px;
+}
+/*orange angle*/
+.dc-bottom-orange-rightangle,
+.dc-top-orange-rightangle,
+.dc-bottom-orange-leftangle,
+.dc-top-orange-leftangle{
+    background: #FFA800;
+    padding: 10px 30px;
+}
+/*red angle*/
+.dc-bottom-red-rightangle,
+.dc-top-red-rightangle,
+.dc-bottom-red-leftangle,
+.dc-top-red-leftangle{
+    background: #DD0D24;
+    padding: 10px 30px;
+}
+/*lightred angle*/
+.dc-bottom-lightred-rightangle,
+.dc-top-lightred-rightangle,
+.dc-bottom-lightred-leftangle,
+.dc-top-lightred-leftangle{
+    background: #FF0D0D;
+    padding: 10px 30px;
+}
+/*purple angle*/
+.dc-bottom-purple-rightangle,
+.dc-top-purple-rightangle,
+.dc-bottom-purple-leftangle,
+.dc-top-purple-leftangle{
+    background: #A061BA;
+    padding: 10px 30px;
+}
+/*lightpurple angle*/
+.dc-bottom-bluepurple-rightangle,
+.dc-top-bluepurple-rightangle,
+.dc-bottom-bluepurple-leftangle,
+.dc-top-bluepurple-leftangle{
+    background: #7A71BD;
+    padding: 10px 30px;
+}
+/*green angle*/
+.dc-bottom-green-rightangle,
+.dc-top-green-rightangle,
+.dc-bottom-green-leftangle,
+.dc-top-green-leftangle{
+    background: #0D9E6E;
+    padding: 10px 30px;
+}
+/*lightgreen angle*/
+.dc-bottom-lightgreen-rightangle,
+.dc-top-lightgreen-rightangle,
+.dc-bottom-lightgreen-leftangle,
+.dc-top-lightgreen-leftangle{
+    background: #0DCF6E;
+    padding: 10px 30px;
+}
+/*pink angle*/
+.dc-bottom-pink-rightangle,
+.dc-top-pink-rightangle,
+.dc-bottom-pink-leftangle,
+.dc-top-pink-leftangle{
+    background: #FF4897;
+    padding: 10px 30px;
+}
+/*cyan angle*/
+.dc-bottom-cyan-rightangle,
+.dc-top-cyan-rightangle,
+.dc-bottom-cyan-leftangle,
+.dc-top-cyan-leftangle{
+    background: #3EC8BE;
+    padding: 10px 30px;
+}
+/*tan angle*/
+.dc-bottom-tan-rightangle,
+.dc-top-tan-rightangle,
+.dc-bottom-tan-leftangle,
+.dc-top-tan-leftangle{
+    background: #9E6E0D;
+    padding: 10px 30px;
+}
+/*white angle*/
+.dc-bottom-white-rightangle:after,
+.dc-top-white-rightangle:after,
+.dc-bottom-white-leftangle:after,
+.dc-top-white-leftangle:after,
+/*black angle*/
+.dc-bottom-black-rightangle:after,
+.dc-top-black-rightangle:after,
+.dc-bottom-black-leftangle:after,
+.dc-top-black-leftangle:after,
+/*blue angle*/
+.dc-bottom-blue-rightangle:after,
+.dc-top-blue-rightangle:after,
+.dc-bottom-blue-leftangle:after,
+.dc-top-blue-leftangle:after,
+/*lightblue angle*/
+.dc-bottom-lightblue-rightangle:after,
+.dc-top-lightblue-rightangle:after,
+.dc-bottom-lightblue-leftangle:after,
+.dc-top-lightblue-leftangle:after,
+/*yellow angle*/
+.dc-bottom-yellow-rightangle:after,
+.dc-top-yellow-rightangle:after,
+.dc-bottom-yellow-leftangle:after,
+.dc-top-yellow-leftangle:after,
+/*fadeyellow angle*/
+.dc-bottom-fadeyellow-rightangle:after,
+.dc-top-fadeyellow-rightangle:after,
+.dc-bottom-fadeyellow-leftangle:after,
+.dc-top-fadeyellow-leftangle:after,
+/*orange angle*/
+.dc-bottom-orange-rightangle:after,
+.dc-top-orange-rightangle:after,
+.dc-bottom-orange-leftangle:after,
+.dc-top-orange-leftangle:after,
+/*red angle*/
+.dc-bottom-red-rightangle:after,
+.dc-top-red-rightangle:after,
+.dc-bottom-red-leftangle:after,
+.dc-top-red-leftangle:after,
+/*lightred angle*/
+.dc-bottom-lightred-rightangle:after,
+.dc-top-lightred-rightangle:after,
+.dc-bottom-lightred-leftangle:after,
+.dc-top-lightred-leftangle:after,
+/*purple angle*/
+.dc-bottom-purple-rightangle:after,
+.dc-top-purple-rightangle:after,
+.dc-bottom-purple-leftangle:after,
+.dc-top-purple-leftangle:after,
+/*lightpurple angle*/
+.dc-bottom-bluepurple-rightangle:after,
+.dc-top-bluepurple-rightangle:after,
+.dc-bottom-bluepurple-leftangle:after,
+.dc-top-bluepurple-leftangle:after,
+/*green angle*/
+.dc-bottom-green-rightangle:after,
+.dc-top-green-rightangle:after,
+.dc-bottom-green-leftangle:after,
+.dc-top-green-leftangle:after,
+/*lightgreen angle*/
+.dc-bottom-lightgreen-rightangle:after,
+.dc-top-lightgreen-rightangle:after,
+.dc-bottom-lightgreen-leftangle:after,
+.dc-top-lightgreen-leftangle:after,
+/*pink angle*/
+.dc-bottom-pink-rightangle:after,
+.dc-top-pink-rightangle:after,
+.dc-bottom-pink-leftangle:after,
+.dc-top-pink-leftangle:after,
+/*cyan angle*/
+.dc-bottom-cyan-rightangle:after,
+.dc-top-cyan-rightangle:after,
+.dc-bottom-cyan-leftangle:after,
+.dc-top-cyan-leftangle:after,
+/*tan angle*/
+.dc-bottom-tan-rightangle:after,
+.dc-top-tan-rightangle:after,
+.dc-bottom-tan-leftangle:after,
+.dc-top-tan-leftangle:after
+{
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 30%;
+    top: 0;
+}
+/*white angle*/
+.dc-top-white-rightangle:after{
+    background: url('angles/topright/white-topright.png');
+    background-size: 100% 100%;
+    left:100%;
+}
+.dc-bottom-white-rightangle:after{
+    background: url('angles/bottomright/white-btmright.png');
+    background-size: 100% 100%;
+    left:100%;
+}
+.dc-bottom-white-leftangle:after{
+    background: url('angles/bottomleft/white-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-white-leftangle:after{
+    background: url('angles/topleft/white-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*black angle*/
+.dc-top-black-rightangle:after{
+    background: url('angles/topright/black-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-black-rightangle:after{
+    background: url('angles/bottomright/black-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-black-leftangle:after{
+    background: url('angles/bottomleft/black-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-black-leftangle:after{
+    background: url('angles/topleft/black-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*blue angle*/
+.dc-top-blue-rightangle:after{
+    background: url('angles/topright/blue-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-blue-rightangle:after{
+    background: url('angles/bottomright/blue-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-blue-leftangle:after{
+    background: url('angles/bottomleft/blue-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-blue-leftangle:after{
+    background: url('angles/topleft/blue-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*lightblue angle*/
+.dc-top-lightblue-rightangle:after{
+    background: url('angles/topright/lightblue-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-lightblue-rightangle:after{
+    background: url('angles/bottomright/lightblue-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-lightblue-leftangle:after{
+    background: url('angles/bottomleft/lightblue-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-lightblue-leftangle:after{
+    background: url('angles/topleft/lightblue-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*green angle*/
+.dc-top-green-rightangle:after{
+    background: url('angles/topright/green-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-green-rightangle:after{
+    background: url('angles/bottomright/green-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-green-leftangle:after{
+    background: url('angles/bottomleft/green-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-green-leftangle:after{
+    background: url('angles/topleft/green-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*lightgreen angle*/
+.dc-top-lightgreen-rightangle:after{
+    background: url('angles/topright/lightgreen-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-lightgreen-rightangle:after{
+    background: url('angles/bottomright/lightgreen-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-lightgreen-leftangle:after{
+    background: url('angles/bottomleft/lightgreen-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-lightgreen-leftangle:after{
+    background: url('angles/topleft/lightgreen-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*red angle*/
+.dc-top-red-rightangle:after{
+    background: url('angles/topright/red-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-red-rightangle:after{
+    background: url('angles/bottomright/red-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-red-leftangle:after{
+    background: url('angles/bottomleft/red-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-red-leftangle:after{
+    background: url('angles/topleft/red-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*lightred angle*/
+.dc-top-lightred-rightangle:after{
+    background: url('angles/topright/lightred-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-lightred-rightangle:after{
+    background: url('angles/bottomright/lightred-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-lightred-leftangle:after{
+    background: url('angles/bottomleft/lightred-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-lightred-leftangle:after{
+    background: url('angles/topleft/lightred-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*yellow angle*/
+.dc-top-yellow-rightangle:after{
+    background: url('angles/topright/yellow-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-yellow-rightangle:after{
+    background: url('angles/bottomright/yellow-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-yellow-leftangle:after{
+    background: url('angles/bottomleft/yellow-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-yellow-leftangle:after{
+    background: url('angles/topleft/yellow-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*fadeyellow angle*/
+.dc-top-fadeyellow-rightangle:after{
+    background: url('angles/topright/fadeyellow-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-fadeyellow-rightangle:after{
+    background: url('angles/bottomright/fadeyellow-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-fadeyellow-leftangle:after{
+    background: url('angles/bottomleft/fadeyellow-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-fadeyellow-leftangle:after{
+    background: url('angles/topleft/fadeyellow-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*pink angle*/
+.dc-top-pink-rightangle:after{
+    background: url('angles/topright/pink-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-pink-rightangle:after{
+    background: url('angles/bottomright/pink-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-pink-leftangle:after{
+    background: url('angles/bottomleft/pink-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-pink-leftangle:after{
+    background: url('angles/topleft/purple-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*cyan angle*/
+.dc-top-cyan-rightangle:after{
+    background: url('angles/topright/cyan-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-cyan-rightangle:after{
+    background: url('angles/bottomright/cyan-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-cyan-leftangle:after{
+    background: url('angles/bottomleft/cyan-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-cyan-leftangle:after{
+    background: url('angles/topleft/cyan-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*tan angle*/
+.dc-top-tan-rightangle:after{
+    background: url('angles/topright/tan-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-tan-rightangle:after{
+    background: url('angles/bottomright/tan-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-tan-leftangle:after{
+    background: url('angles/bottomleft/tan-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-tan-leftangle:after{
+    background: url('angles/topleft/tan-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*purple angle*/
+.dc-top-purple-rightangle:after{
+    background: url('angles/topright/purple-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-purple-rightangle:after{
+    background: url('angles/bottomright/purple-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-purple-leftangle:after{
+    background: url('angles/bottomleft/purple-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-purple-leftangle:after{
+    background: url('angles/topleft/purple-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*bluepurple angle*/
+.dc-top-bluepurple-rightangle:after{
+    background: url('angles/topright/bluepurple-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-bluepurple-rightangle:after{
+    background: url('angles/bottomright/bluepurple-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-bluepurple-leftangle:after{
+    background: url('angles/bottomleft/bluepurple-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-bluepurple-leftangle:after{
+    background: url('angles/topleft/bluepurple-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/*orange angle*/
+.dc-top-orange-rightangle:after{
+    background: url('angles/topright/orange-topright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-orange-rightangle:after{
+    background: url('angles/bottomright/orange-btmright.png');
+    background-size: 100% 100%;
+    left : 100%;
+}
+.dc-bottom-orange-leftangle:after{
+    background: url('angles/bottomleft/orange-btmleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+.dc-top-orange-leftangle:after{
+    background: url('angles/topleft/orange-topleft.png');
+    background-size: 100% 100%;
+    right : 100%;
+}
+/* end: box style with color */
+
+/* start: font color */
+.dc-txt-white{
+    color: #FFFFFF;
+}
+.dc-txt-black{
+    color: #000000;
+}
+.dc-txt-orange{
+    color: #FFA800;
+}
+.dc-txt-bluepurple{
+    color: #7A71BD;
+}
+.dc-txt-purple{
+    color: #A061BA;
+}
+.dc-txt-tan{
+    color: #9E6E0D;
+}
+.dc-txt-cyan{
+    color: #3EC8BE;
+}
+.dc-txt-pink{
+    color: #FF4897;
+}
+.dc-txt-fadeyellow{
+    color: #EBD438;
+}
+.dc-txt-yellow{
+    color: #FFC50D;
+}
+.dc-txt-lightred{
+    color: #FF0D0D;
+}
+.dc-txt-red{
+    color: #DD0D24;
+}
+.dc-txt-lightgreen{
+    color: #0DCF6E;
+}
+.dc-txt-green{
+    color: #0D9E6E;
+}
+.dc-txt-lightblue{
+    color: #0DC2FF;
+}
+.dc-txt-blue{
+    color: #0D9EFF;
+}
+/* start: font color */
+
+/*start: text-shadow*/
+/*dark shadow*/
+.dc-txt-shadow1-drk{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.dc-txt-shadow2-drk{
+    text-shadow: 2px -2px 3px rgba(0, 0, 0, 0.3);
+}
+.dc-txt-shadow3-drk{
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.dc-txt-shadow4-drk{
+    text-shadow: 4px -2px 0px rgba(0, 0, 0, 0.15);
+}
+.dc-txt-shadow5-drk{
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5),
+                 0 10px 10px rgba(0, 0, 0, 0.15),
+                 0 10px 2px rgba(0, 0, 0, 0.1),
+                 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.dc-txt-shadow6-drk{
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5),
+                 0 -10px 10px rgba(0, 0, 0, 0.15),
+                 0 -10px 2px rgba(0, 0, 0, 0.1),
+                 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.dc-txt-shadow7-drk{
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.dc-txt-shadow8-drk{
+    text-shadow: 0 -1px 0 #ccc, 
+               0 -2px 0 #c9c9c9,
+               0 -3px 0 #bbb,
+               0 -4px 0 #b9b9b9,
+               0 -5px 0 #aaa,
+               0 -6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 -1px 3px rgba(0,0,0,.3),
+               0 -3px 5px rgba(0,0,0,.2),
+               0 -5px 10px rgba(0,0,0,.25),
+               0 -10px 10px rgba(0,0,0,.2),
+               0 -19px 20px rgba(0,0,0,.15);
+}
+
+/*light shadow*/
+.dc-txt-shadow1-light{
+    text-shadow: 2px -2px 3px rgba(255, 255, 255, 0.3);
+}
+.dc-txt-shadow2-light{
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+.dc-txt-shadow3-light{
+    text-shadow: 4px -2px 0px rgba(255, 255, 255, 0.15);
+}
+.dc-txt-shadow4-light{
+    text-shadow: 4px 2px 0px rgba(255, 255, 255, 0.15);
+}
+.dc-txt-shadow5-light{
+    text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.5),
+                 0 -10px 10px rgba(255, 255, 255, 0.15),
+                 0 -10px 2px rgba(255, 255, 255, 0.1),
+                 0 0 20px rgba(255, 255, 255, 0.1);
+}
+.dc-txt-shadow6-light{
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.5),
+                 0 10px 10px rgba(255, 255, 255, 0.15),
+                 0 10px 2px rgba(255, 255, 255, 0.1),
+                 0 0 20px rgba(255, 255, 255, 0.1);
+}
+.dc-txt-shadow7-light{
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(255,255,255,.1),
+               0 0 5px rgba(255,255,255,.1),
+               0 1px 3px rgba(255,255,255,.3),
+               0 3px 5px rgba(255,255,255,.2),
+               0 5px 10px rgba(255,255,255,.25),
+               0 10px 10px rgba(255,255,255,.2),
+               0 20px 20px rgba(255,255,255,.15);
+}
+.dc-txt-shadow8-light{
+    text-shadow: 0 -1px 0 #ccc, 
+               0 -2px 0 #c9c9c9,
+               0 -3px 0 #bbb,
+               0 -4px 0 #b9b9b9,
+               0 -5px 0 #aaa,
+               0 -6px 1px rgba(255,255,255,.1),
+               0 0 5px rgba(255,255,255,.1),
+               0 -1px 3px rgba(255,255,255,.3),
+               0 -3px 5px rgba(255,255,255,.2),
+               0 -5px 10px rgba(255,255,255,.25),
+               0 -10px 10px rgba(255,255,255,.2),
+               0 -20px 20px rgba(255,255,255,.15);
+}
+/*end: text-shadow*/
+
+/*start: key frame*/
+@-webkit-keyframes flipLoopLeft {
+    0%   {-webkit-transform: rotateY(0deg) translateX(-300%); transform: rotateY(0deg) translateX(-300%);}
+    48%  {-webkit-transform: rotateY(0deg) translateX(0%); transform: rotateY(0deg) translateX(0%);}
+    52%  {-webkit-transform: rotateY(180deg) translateX(0%); transform: rotateY(180deg) translateX(0%);}
+    100% {-webkit-transform: rotateY(180deg) translateX(300%); transform: rotateY(180deg) translateX(300%);}
+}
+
+/* Standard syntax */
+@keyframes flipLoopLeft {
+    0%   {-webkit-transform: rotateY(0deg) translateX(-300%); transform: rotateY(0deg) translateX(-300%);}
+    48%  {-webkit-transform: rotateY(0deg) translateX(0%); transform: rotateY(0deg) translateX(0%);}
+    52%  {-webkit-transform: rotateY(180deg) translateX(0%); transform: rotateY(180deg) translateX(0%);}
+    100% {-webkit-transform: rotateY(180deg) translateX(300%); transform: rotateY(180deg) translateX(300%);}
+}
+.flipLoopLeft{-webkit-animation-name:flipLoopLeft;animation-name:flipLoopLeft}
+
+@-webkit-keyframes flipLoopRight {
+    0%   {-webkit-transform: rotateY(0deg) translateX(300%); transform: rotateY(0deg) translateX(300%);}
+    48%  {-webkit-transform: rotateY(0deg) translateX(0%); transform: rotateY(0deg) translateX(0%);}
+    52%  {-webkit-transform: rotateY(180deg) translateX(0%); transform: rotateY(180deg) translateX(0%);}
+    100% {-webkit-transform: rotateY(180deg) translateX(-300%); transform: rotateY(180deg) translateX(-300%);}
+}
+
+/* Standard syntax */
+@keyframes flipLoopRight {
+    0%   {-webkit-transform: rotateY(0deg) translateX(300%); transform: rotateY(0deg) translateX(300%);}
+    48%  {-webkit-transform: rotateY(0deg) translateX(0%); transform: rotateY(0deg) translateX(0%);}
+    52%  {-webkit-transform: rotateY(180deg) translateX(0%); transform: rotateY(180deg) translateX(0%);}
+    100% {-webkit-transform: rotateY(180deg) translateX(-300%); transform: rotateY(180deg) translateX(-300%);}
+}
+.flipLoopRight{-webkit-animation-name:flipLoopRight;animation-name:flipLoopRight}
+
+@-webkit-keyframes longLoopLeft {
+    0%   {-webkit-transform: translateX(-300%); transform:translateX(-300%);}
+    50%  {-webkit-transform: translateX(0%); transform: translateX(0%);}
+    100% {-webkit-transform: translateX(-300%); transform: translateX(-300%);}
+}
+
+/* Standard syntax */
+@keyframes longLoopLeft {
+    0%   {-webkit-transform: translateX(-300%); transform:translateX(-300%);}
+    50%  {-webkit-transform: translateX(0%); transform: translateX(0%);}
+    100% {-webkit-transform: translateX(-300%); transform: translateX(-300%);}
+}
+.longLoopLeft{-webkit-animation-name:longLoopLeft;animation-name:longLoopLeft}
+
+@-webkit-keyframes longLoopRight {
+    0%   {-webkit-transform: translateX(300%); transform:translateX(300%);}
+    52%  {-webkit-transform: translateX(0%); transform:translateX(0%);}
+    100% {-webkit-transform: translateX(300%); transform: translateX(300%);}
+}
+
+/* Standard syntax */
+@keyframes longLoopRight {
+    0%   {-webkit-transform: translateX(300%); transform:translateX(300%);}
+    52%  {-webkit-transform: translateX(0%); transform:translateX(0%);}
+    100% {-webkit-transform: translateX(300%); transform: translateX(300%);}
+}
+.longLoopRight{-webkit-animation-name:longLoopRight;animation-name:longLoopRight}
+
+@-webkit-keyframes shortLoopTop {
+    0%   {-webkit-transform: translateY(-30%); transform: translateY(-30%);}
+    50%  {-webkit-transform: translateY(0%); transform: translateY(0%);}
+    100% {-webkit-transform: translateY(-30%); transform: translateY(-30%);}
+}
+
+/* Standard syntax */
+@keyframes shortLoopTop {
+    0%   {-webkit-transform: translateY(-30%); transform: translateY(-30%);}
+    50%  {-webkit-transform: translateY(0%); transform: translateY(0%);}
+    100% {-webkit-transform: translateY(-30%); transform: translateY(-30%);}
+}
+.shortLoopTop{-webkit-animation-name:shortLoopTop;animation-name:shortLoopTop}
+/*end: key frame*/
