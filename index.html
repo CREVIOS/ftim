@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Terminacon</title>
+    
+    <!-- Bootstrap -->
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32"> 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+            <h3 style="text-align: center;font-weight: bold" class="modal-title text-dark " id="staticBackdropLabel">Regsitration Form</h3>
+            </div>
+            
+            <div class="modal-body form_content">
+                <form  method="POST" id="registrationform" >
+                    <div class="row align-items-center">
+                        <div class="col mt-4">
+
+                        <label for="fullName">Full Name</label>
+                        <input class="form-control prepended-form-control" type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                                                
+                        <label for="fullName">Institution Name</label>
+                        <input class="form-control plepended-form-control" type="text" id="name" name="name" placeholder="Enter Your Institution Name in full form" required>
+
+                        <label for="fullName">Email Address</label>
+                        <input class="form-control prepended-form-control" type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                        
+                        <label for="fullName">Contact No</label>
+                        <input class="form-control prepended-form-control" type="Contact" id="name" name="name" placeholder="Enter Your Personal Contact No" required>
+
+                        <button type="button" class="btn btn_confirm">Confirm!</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        
+        </div>
+    </div>
+</div>
+  
+    
+
+    <!-- Start: Header Area -->
+    <header>
+        <section class="topbar">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-2 col-sm-2">
+                        <div id="menu">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div> -->
+                    <div class="col-md-12">
+                        <p>Fr. Timm Memorial Programming Contest - 1.0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- End: Header Area -->
+
+    <section class="slider_area">
+  <button type="button" class="btn btn_register" data-toggle="modal" data-target="#staticBackdrop">
+     Register Now!
+</button>
+    </section>
+
+    <section class="content_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h2>About:</h2>
+                    <p>In this COVID-19 pandemic, behold the largest online programming competition in the country presented by Notre Dame Information Technology Club. This is our first ever flagship programming contest which will be held every year from now.
+                    In memory of Father Richard William Timm, presenting 'Father Timm National Programming Contest' to be held for the first time in this October.</p> <br>
+
+                    <p>Father Timm (March 2, 1923 – September 11, 2020) was one of the founding members of Notre Dame College, Dhaka and our respected 6th principal. Father Timm not only helped Bangladesh by his writing and releif works at the time of the Liberation war, but also was a lifelong friend of Bangladesh contributing to her development in whatever ways he could. Besides his social work, he had an excellent scholarly mind. As a biologist, he had done extensive reearch works in taxomony and discovered over 250 species. Father Timm is also the founder of the Debate and Science Club of Notre Dame College, the first in the country. Through this competition, we will remember him every year for his immense contributions to Science, Notre Dame College, and Bangladesh.</p>
+                    <h2>Rules:</h2>
+                    <ul>
+                        <li type="disc">Participants have to participate individually.</li>
+                        <li type="disc">The Contest will follow the format of IOI.</li>
+                        <li type="disc">Participants can use only c,c++ and python programming language.</li>
+                        <li type="disc">The contest platform will be “Toph”. </li>
+                        <li type="disc">Participants have to participate in the contest using the custom handle.</li>
+                        <li type="disc">Custom handles will be given to participants via email.</li>
+                        <li type="disc">The contest will last for 4 hours(10:00 AM - 2:00 PM).</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12" style="text-align: center;">
+                    <img src="images/contest/nditc_logo.png" class="first_image"> <br>
+                    <img src="images/contest/logo.png" class="second_images"> <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <section class="ftr_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© Notre Dame Information Technology Club | 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+
+
+
+
+    <!--color box end-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="vendor/jquery-1.9.1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap.min.js"></script>  
+
+
+
+  </body>
+</html>

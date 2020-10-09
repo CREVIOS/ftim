@@ -1,0 +1,376 @@
+
+/* ------------- Start: All Default Color ------------- */
+.dc-bg-second-default, .dc-schedule-tab .dc-nav-tab li.dc-active, .dc-schedule-tab .dc-nav-tab li:hover, .dc-slider-tab .dc-nav-tab li.dc-active, .dc-slider-tab .dc-nav-tab li:hover{
+    background:#FFA800 !important;
+}
+.dc-text-second-default, .dc-blog-thumb-2 > div:nth-child(2n) > .dc-blog-thumb-container::after{
+    color:#FFA800 !important;
+}
+.dc-border-second-default{
+    border-color:#FFA800 !important;
+}
+.dc-sl-nav ul .dc-sel-nav, .dc-sl-nav.dc-sl-round-nav ul .dc-sel-nav, .dc-sl-nav ul li,
+.dc-blog-thumb-2 > div > .dc-blog-thumb-container::before,
+.dc-blog-thumb-2 > div:nth-child(2n+1) > .dc-blog-thumb-container::after {
+  background: #0D9E6E;
+}
+.dc-feature-box:hover {
+    border-color: #0D9E6E;
+}
+.dc-list-check li:before, .dc-list-thumb li:before, .dc-list-star li:before, .dc-list-arrow li:before, .dc-list-twitter li:before{
+    color: #0D9E6E !important;
+}
+a{
+    color: #0D9E6E;
+}
+a:hover{
+    color: #FFA800;
+}
+.dc-border-default, .dc-border-default-before:before, .dc-border-default-after:after, .dc-border-default-before-after:before, .dc-border-default-before-after:after{
+    border-color:#0D9E6E !important;
+}
+.dc-border-inverse-default, .dc-border-inverse-default-before:before, .dc-border-inverse-default-after:after, .dc-border-inverse-default-before-after:before, .dc-border-inverse-defaulte-before-after:after{
+    border-color:#FFFFFF !important;
+}
+.dc-text-default{
+    color:#0D9E6E !important;
+}
+.dc-text-inverse-default{
+    color:#FFFFFF !important;
+}
+.dc-bg-default, .dc-bg-default-before::before, .dc-bg-default-after::after{
+    background-color:#0D9E6E !important;
+}
+.dc-bg-inverse-default{
+    background-color:#FFFFFF !important;
+}
+.dc-bg-default-tr-3{
+    background-color:rgba(13,158,110,0.3) !important;
+}
+.dc-bg-default-tr-5{
+    background-color:rgba(13,158,110,0.6) !important;
+}
+.dc-bg-default-tr-7{
+    background-color:rgba(13,158,110,0.8) !important;
+}
+.dc-bg-inverse-default-tr-3{
+    background-color:rgba(255,255,255,0.3) !important;
+}
+.dc-bg-inverse-default-tr-5{
+    background-color:rgba(255,255,255,0.5) !important;
+}
+.dc-bg-inverse-default-tr-7{
+    background-color:rgba(255,255,255,0.7) !important;
+}
+.dc-bg-overlay-default-tr-3{
+    background-color:rgba(0,0,0,0.3) !important;
+}
+.dc-bg-overlay-default-tr-5{
+    background-color:rgba(0,0,0,0.5) !important;
+}
+.dc-bg-overlay-default-tr-7{
+    background-color:rgba(0,0,0,0.7) !important;
+}
+.dc-btn-gr-default {
+    background: #0D9E6E; 
+    background-image: -moz-linear-gradient(top, #9ce2a9 0%, #0D9E6E 100%);
+    background-image: -webkit-linear-gradient(top, #9ce2a9 0%, #0D9E6E 100%);
+    background-image: -ms-linear-gradient(top, #9ce2a9 0%, #0D9E6E 100%);
+    background-image: -o-linear-gradient(top, #9ce2a9 0%, #0D9E6E 100%);
+    background-image: linear-gradient(top, #9ce2a9 0%, #0D9E6E 100%);
+
+}
+.dc-btn-gr-default:hover {
+    background: #0D9E6E; 
+    background-image: -moz-linear-gradient(top, #0D9E6E 0%, #9ce2a9 100%);
+    background-image: -webkit-linear-gradient(top, #0D9E6E 0%, #9ce2a9 100%);
+    background-image: -ms-linear-gradient(top, #0D9E6E 0%, #9ce2a9 100%);
+    background-image: -o-linear-gradient(top, #0D9E6E 0%, #9ce2a9 100%);
+    background-image: linear-gradient(top, #0D9E6E 0%, #9ce2a9 100%);
+}
+.dc-btn-fl-default {
+    background: #0D9E6E;
+}
+.dc-btn-fl-default.dc-btn-slide-right:after,
+.dc-btn-fl-default.dc-btn-slide-left:after,
+.dc-btn-fl-default.dc-btn-slide-up:after,
+.dc-btn-fl-default.dc-btn-slide-down:after,
+.dc-btn-fl-default.dc-btn-slide-hor:after,
+.dc-btn-fl-default.dc-btn-slide-vert:after,
+.dc-btn-fl-default.dc-btn-slide-box:after {
+    background: rgba(0, 0, 0, 0.2)
+}
+.dc-btn-fl-default.dc-btn-slide-right:hover,
+.dc-btn-fl-default.dc-btn-slide-right:active,
+.dc-btn-fl-default.dc-btn-slide-left:hover,
+.dc-btn-fl-default.dc-btn-slide-left:active,
+.dc-btn-fl-default.dc-btn-slide-up:hover,
+.dc-btn-fl-default.dc-btn-slide-up:active,
+.dc-btn-fl-default.dc-btn-slide-down:hover,
+.dc-btn-fl-default.dc-btn-slide-down:active,
+.dc-btn-fl-default.dc-btn-slide-hor:hover,
+.dc-btn-fl-default.dc-btn-slide-hor:active,
+.dc-btn-fl-default.dc-btn-slide-vert:hover,
+.dc-btn-fl-default.dc-btn-slide-vert:active,
+.dc-btn-fl-default.dc-btn-slide-box:hover,
+.dc-btn-fl-default.dc-btn-slide-box:active {
+    color: #fff;
+    background: #0D9E6E;
+}
+.dc-btn-fl-default:hover {
+    background: #9ce2a9;
+}
+.dc-btn-tr-default {
+    border: 2px solid #0D9E6E;
+    color: #0D9E6E
+}
+.dc-btn-tr-default.dc-btn-slide-right:after,
+.dc-btn-tr-default.dc-btn-slide-left:after,
+.dc-btn-tr-default.dc-btn-slide-up:after,
+.dc-btn-tr-default.dc-btn-slide-down:after,
+.dc-btn-tr-default.dc-btn-slide-hor:after,
+.dc-btn-tr-default.dc-btn-slide-vert:after,
+.dc-btn-tr-default.dc-btn-slide-box:after {
+    background: #0D9E6E;
+}
+.dc-btn-tr-default.dc-btn-slide-right:hover,
+.dc-btn-tr-default.dc-btn-slide-right:active,
+.dc-btn-tr-default.dc-btn-slide-left:hover,
+.dc-btn-tr-default.dc-btn-slide-left:active,
+.dc-btn-tr-default.dc-btn-slide-up:hover,
+.dc-btn-tr-default.dc-btn-slide-up:active,
+.dc-btn-tr-default.dc-btn-slide-down:hover,
+.dc-btn-tr-default.dc-btn-slide-down:active,
+.dc-btn-tr-default.dc-btn-slide-hor:hover,
+.dc-btn-tr-default.dc-btn-slide-hor:active,
+.dc-btn-tr-default.dc-btn-slide-vert:hover,
+.dc-btn-tr-default.dc-btn-slide-vert:active,
+.dc-btn-tr-default.dc-btn-slide-box:hover,
+.dc-btn-tr-default.dc-btn-slide-box:active {
+    color: #fff;
+    background: none
+}
+.dc-btn-tr-default:hover {
+    background: #0D9E6E;
+    color: #ffffff
+}
+.dc-btn-gr-inverse-default {
+    color: #0D9E6E;
+    background: #f9f9f9;
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #d9d9d9);
+    background-image: -moz-linear-gradient(top, #f9f9f9, #d9d9d9);
+    background-image: -ms-linear-gradient(top, #f9f9f9, #d9d9d9);
+    background-image: -o-linear-gradient(top, #f9f9f9, #d9d9d9);
+    background-image: linear-gradient(to bottom, #f9f9f9, #d9d9d9);
+}
+.dc-btn-gr-inverse-default:hover {
+    background: #cfcfcf;
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #f9f9f9);
+    background-image: -moz-linear-gradient(top, #d9d9d9, #f9f9f9);
+    background-image: -ms-linear-gradient(top, #d9d9d9, #f9f9f9);
+    background-image: -o-linear-gradient(top, #d9d9d9, #f9f9f9);
+    background-image: linear-gradient(to bottom, #d9d9d9, #f9f9f9);
+}
+.dc-btn-fl-inverse-default {
+    background: #FFFFFF;
+    color:#0D9E6E;
+}
+.dc-btn-fl-inverse-default.dc-btn-slide-right:after,
+.dc-btn-fl-inverse-default.dc-btn-slide-left:after,
+.dc-btn-fl-inverse-default.dc-btn-slide-up:after,
+.dc-btn-fl-inverse-default.dc-btn-slide-down:after,
+.dc-btn-fl-inverse-default.dc-btn-slide-hor:after,
+.dc-btn-fl-inverse-default.dc-btn-slide-vert:after,
+.dc-btn-fl-inverse-default.dc-btn-slide-box:after {
+    background: rgba(0, 0, 0, 0.1)
+}
+.dc-btn-fl-inverse-default.dc-btn-slide-right:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-right:active,
+.dc-btn-fl-inverse-default.dc-btn-slide-left:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-left:active,
+.dc-btn-fl-inverse-default.dc-btn-slide-up:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-up:active,
+.dc-btn-fl-inverse-default.dc-btn-slide-down:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-down:active,
+.dc-btn-fl-inverse-default.dc-btn-slide-hor:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-hor:active,
+.dc-btn-fl-inverse-default.dc-btn-slide-vert:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-vert:active,
+.dc-btn-fl-inverse-default.dc-btn-slide-box:hover,
+.dc-btn-fl-inverse-default.dc-btn-slide-box:active {
+    color: #0D9E6E;
+    background: #FFFFFF;
+}
+.dc-btn-fl-inverse-default:hover {
+    background: #E7EDF2;
+}
+.dc-btn-tr-inverse-default {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.dc-btn-tr-inverse-default.dc-btn-slide-right:after,
+.dc-btn-tr-inverse-default.dc-btn-slide-left:after,
+.dc-btn-tr-inverse-default.dc-btn-slide-up:after,
+.dc-btn-tr-inverse-default.dc-btn-slide-down:after,
+.dc-btn-tr-inverse-default.dc-btn-slide-hor:after,
+.dc-btn-tr-inverse-default.dc-btn-slide-vert:after,
+.dc-btn-tr-inverse-default.dc-btn-slide-box:after {
+    background: #FFFFFF;
+}
+.dc-btn-tr-inverse-default.dc-btn-slide-right:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-right:active,
+.dc-btn-tr-inverse-default.dc-btn-slide-left:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-left:active,
+.dc-btn-tr-inverse-default.dc-btn-slide-up:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-up:active,
+.dc-btn-tr-inverse-default.dc-btn-slide-down:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-down:active,
+.dc-btn-tr-inverse-default.dc-btn-slide-hor:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-hor:active,
+.dc-btn-tr-inverse-default.dc-btn-slide-vert:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-vert:active,
+.dc-btn-tr-inverse-default.dc-btn-slide-box:hover,
+.dc-btn-tr-inverse-default.dc-btn-slide-box:active {
+    color: #0D9E6E;
+    background: none;
+}
+.dc-btn-tr-inverse-default:hover {
+    background: #FFFFFF;
+    color: #0D9E6E
+}
+/* ------------- End: All Default Color ------------- */
+
+/* ------------- Start: Main Nav ------------- */
+.dc-dd-box {color: #0D9E6E;}
+.dc-mb-icon-box{
+    color: #0D9E6E;
+}
+.dc-nav ul li a{ 
+    color: #666;
+}
+.dc-nav > ul > li a:hover, .dc-nav ul li.dc-active > a, .dc-nav ul li a:active, .dc-nav ul li a:focus{
+    border-top: 2px solid #0D9E6E;
+}
+.dc-nav.dc-nav-middle > ul > li a:hover, .dc-nav.dc-nav-middle ul li.dc-active > a, .dc-nav.dc-nav-middle ul li a:active, .dc-nav.dc-nav-middle ul li a:focus{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #0D9E6E;
+}
+.dc-nav ul li a:hover, .dc-nav ul li.dc-active > a, .dc-nav ul li a:active, .dc-nav ul li a:focus{ 
+    color: #0D9E6E; 
+}
+.dc-mg-container h3 {
+    color: #0D9E6E;
+}
+@media all and (min-width:768px){
+    .dc-mg-text{ 
+        color: #666;
+    }
+}/* ------------- End: Main Nav ------------- */
+
+/* ------------- Start: Start Portfolio ------------- */
+.dc-pfbtn-grp .dc-pfbtn, .dc-pfbtn-grp .dc-pfbtn:hover:enabled, .pf-elem-ftr, .dc-pf-link ul li a {
+    border-color: #0D9E6E;
+}
+.dc-pfbtn-grp .dc-pfbtn:disabled, .dc-pfbtn-grp .dc-pfbtn[disabled], .dc-pfbtn-grp .dc-pfbtn[disabled]:hover, .dc-pfbtn-grp .dc-pfbtn[disabled]:focus, .dc-pfbtn-grp .dc-pfbtn[disabled]:active{
+    border-color: #0D9E6E;
+    background: #0D9E6E;
+}
+
+/*.dc-pf-full .dc-pfitem, .dc-pf-link ul li a:hover{
+    background: #0D9E6E;
+}
+.dc-pf-link ul li a, .read-more, .dc-fa-style, .dc-pfbtn-grp .dc-pfbtn:hover:enabled{
+    color:#0D9E6E;
+}*/
+.read-more, .dc-fa-style, .dc-pfbtn-grp .dc-pfbtn:hover:enabled{
+    color:#0D9E6E;
+}
+/* ------------- End: Start Portfolio ------------- */
+
+/* ------------- Start: Testimonial ------------- */
+.dc-tstm-box-2 .dc-tstm-client, .dc-tstm_content, .dc-tstm_content:after,.dc-tab-content > div.dc-tab-pane, .dc-tstm-box-single .dc-tstm-person > img, .dc-tstm-box .dc-tstm-person > img, .dc-tstm-box-1 .dc-tstm-person > img, .dc-tstm-box-2 .dc-tstm-person > img, .testimonial-4 .dc-tstm-person > img, .testimonial-4 .dc-tstm-person:after,.dc-active .dc-tstm-person, .testimonial-4 .dc-nav-tab li:hover .dc-tstm-person {
+    border-color:#0D9E6E !important;
+}
+.dc-tstm-box-3 .dc-tstm-client, .dc-tstm-box-2 .dc-tstm_content, .owl-theme .owl-controls .owl-page span {
+  background: #0D9E6E;
+}
+.dc-tstm_content:before , .rating > span{
+    color: #0D9E6E !important;
+}
+.testimonial-4 .dc-tstm-person:after{
+    border-left-color: transparent !important; 
+    border-right-color: transparent !important; 
+}
+.dc-tstm-box-3 .dc-tstm-info, .dc-tstm-box-3 .rating > span{
+    color:#ffffff !important;
+}
+/* ------------- End: Testimonial ------------- */
+
+/*-------------- Start: Header and Footer sections------------ */
+.dc-topbar-default, .dc-footer-default{
+    background: #0D9E6E;
+    color: #ffffff;
+}
+.dc-lang-default li, .dc-user-default li, .dc-user-default li a, .dc-social-default li a, .dc-lang-default li a, .dc-footer-default a{
+    color: #ffffff;
+    border-color:#ffffff;
+}
+.dc-lang-default li a:hover{
+    color:#ffffff;
+    opacity: 0.6;
+}
+.dc-user-default li a:hover, .dc-social-default li a:hover, .dc-footer-default a:hover{
+    color:#ffffff;
+    opacity: 0.6;
+}
+.dc-user-default li a.dc-cart > span{
+  background: #ffffff;
+  color: #0D9E6E;
+}
+.dc-user-default li a.dc-cart:hover span{
+    background:#ffffff;
+    opacity: 0.6;
+}
+.dc-user li a.dc-cart:hover > span{
+    background: #0D9E6E;
+}
+.dc-footer a:hover{
+    color: #0D9E6E;
+}
+.dc-footer-default .dc-footer-bottom {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.dc-footer-default .dc-widget input[type="email"], .dc-widget input[type="text"] {
+  background: #0D9E6E;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+/*-------------- End: Header and Footer sections------------ */
+
+/* ------------- Start: Data Table ------------- */
+.dc-table .dc-table-span {
+  background :#0D9E6E;
+  color :#FFFFFF;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+.dc-table > div:nth-child(n+2) > div:hover{
+    color: #0D9E6E;
+}
+.dc-table-head > div {
+    background: #0D9E6E !important;
+}
+/* ------------- End: Data Table ------------- */
+
+/* ------------- Start: Pricing Table ------------- */
+.dc-price-table-head-1, .dc-price-table-default-body-1, .dc-price-table-body-1 ul li:hover, .dc-price-table-inverse-body-1 ul li:hover{
+    background: #0D9E6E;
+}
+/* ------------- End: Pricing Table ------------- */
+
+/* ------------- Start: Circular Counter ------------- */
+.dc-circle-front-1, .dc-circle-front-2{
+    border-color:#0D9E6E;
+}
+.dc-circle-counter-text {
+    color:#0D9E6E;
+}
+/* ------------- End: Circular Counter ------------- */

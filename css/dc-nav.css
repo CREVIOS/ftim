@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 5, 2016, 11:37:24 PM
+    Author     : zahid
+*/
+
+.dc-full-mega-nav{position: initial !important;}
+.dc-nav{ position: relative;}
+.dc-mb-text{ float: left; }
+.dc-mb-icon-box{ float: right; text-decoration: none; font-size: 25px; }
+/*.dc-nav-ul{ width: 100%; }*/
+.dc-nav ul{ padding: 0; margin: 0; list-style: none; }
+.dc-nav ul li{ position: relative; margin: 0 15px;}
+.dc-nav ul li a{ font-size: 14px; display: block; text-decoration: none; }
+.dc-nav ul li li{ float:none; }
+
+
+li.dc-mega-menu > div.dc-mg-container{width: 100%;}
+li.dc-mega-menu > div ul{ position: initial; margin: 0; }
+.dc-nav ul li > ul, li.dc-mega-menu > div.dc-mg-container{ display: none;}
+
+/*starts mega menu*/
+
+/* mega menu column*/
+.dc-mg-full, .dc-mg-half, .dc-mg-one-third, .dc-mg-two-third, .dc-mg-one-fourth, .dc-mg-two-fourth, 
+.dc-mg-three-fourth, .dc-mg-one-fifth, .dc-mg-two-fifth, .dc-mg-three-fifth, .dc-mg-four-fifth{
+    padding: 20px 15px; line-height: 1.5; }
+
+
+@media all and (min-width:768px){
+    .dc-nav ul li > ul, li.dc-mega-menu > div.dc-mg-container {z-index: 999 !important}
+    .dc-nav ul li.dc-mega-menu{ position: initial; }
+    .dc-mg-full, .dc-mg-half, .dc-mg-one-third, .dc-mg-two-third, .dc-mg-one-fourth, .dc-mg-two-fourth, 
+    .dc-mg-three-fourth, .dc-mg-one-fifth, .dc-mg-two-fifth, .dc-mg-three-fifth, .dc-mg-four-fifth{ float: left; }
+    .dc-mg-full{ float: none; width: 100%; }
+    .dc-mg-half,.dc-mg-two-fourth{ width: 50%; }
+    .dc-mg-one-third{ width: 33.33% }
+    .dc-mg-two-third{ width: 66.66% }
+    .dc-mg-one-fourth{ width: 25% }
+    .dc-mg-three-fourth{ width: 75%; }
+    .dc-mg-one-fifth{ width: 20%; }
+    .dc-mg-two-fifth{ width: 40%; }
+    .dc-mg-three-fifth{ width: 60%; }
+    .dc-mg-four-fifth{ width: 80%; }
+    .dc-mg-text{font-size: 14px; }
+    .dc-nav ul li{ float: left;}
+    .dc-nav ul ul li{ cursor: pointer;}
+    .dc-nav ul li > ul{ position: absolute; left: 0; white-space: nowrap; z-index: 99; }
+    .dc-nav ul li:hover > ul, .dc-nav ul .dc-mega-menu:hover > .dc-mg-container { opacity: 1; visibility: visible;  transition: all 0.3s ease-in-out }
+     li.dc-mega-menu > div.dc-mg-container{ position: absolute; left: 0; z-index: 99; }
+    .dc-nav ul li ul li ul{ left: 100%; top: 0; }
+    .dc-mb-icon-box, .dc-dd-box{ display: none; }
+    .dc-mb-menu{float: left; display: table}
+    .dc-nav-ul{float: right; display: table}
+    .dc-nav ul li > ul, li.dc-mega-menu > div.dc-mg-container{ display: initial; opacity: 0; visibility: hidden;}
+    /*Different menu styles*/
+        /*middle logo Menu*/
+            .dc-nav.dc-nav-middle .dc-mb-menu, .dc-nav.dc-nav-middle .dc-nav-ul{width: atuo; margin:0 auto; float: none; display: table;}
+        /*side menu always*/
+            .dc-nav-toggle-full.dc-nav .dc-nav-ul {display: none;}
+            .dc-nav-toggle-full .dc-mb-menu{float: none; display: block;}
+            .dc-nav-toggle-full .dc-mb-icon-box{display: block !important;}
+            .dc-nav-toggle-full .dc-nav-ul{display: block; position: absolute; width: 100%;}
+            .dc-nav .dc-nav-ul {z-index: 9999;}
+
+}
+@media all and (max-width:767px){
+    .dc-mb-menu{ width: 100%; padding: 10px 0;}
+    .dc-nav ul li ul li > ul {padding-left: 0; margin-left: 30px }
+    .dc-nav ul li ul li a{padding-left: 30px}
+    .dc-nav ul li ul li ul li a{padding-left: 15px}
+    .dc-nav-ul{display: none;}
+    .dc-dd-box {cursor: pointer; font-size: 24px; position: absolute; right: 10px; top: 5px;}
+}
+/*Fixed Nav*/
+#dc-fixed-nav{position: fixed; top: 0; width: 100%; z-index: 9999}
