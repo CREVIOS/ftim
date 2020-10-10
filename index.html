@@ -31,7 +31,12 @@
     </style>
   </head>
   <body>
-
+  <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="196382894515837"
+  theme_color="#fa3c4c">
+      </div>
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -62,22 +67,7 @@
                                     <input type="text" name="title" value="" id="title" class="form-control" placeholder="Institution" required />
                                 </div>
                             </div>
-                      
-                            <div class="row align-items-center">
-                                <div class="col mt-4">
-                                    <input type="number" name="link" value="" id="link" class="form-control" placeholder="Contact No" required />
-                                </div>
-                            </div>
-                          
-
-                            <div class="row align-items-center">
-                                <div class="form-group">
-                                    <div class="col mt-4">
-                                        <textarea class="form-control" rows="3" name="bio" id="bio" placeholder="Address :" required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row align-items-center mt-4">
+                        <div class="row align-items-center mt-4">
                                
 
                                   
@@ -97,6 +87,21 @@
                           <input type="text" name="link" value="" id="interest" class="form-control" placeholder="class" required />
                                 </div>
                             </div>
+                            <div class="row align-items-center">
+                                <div class="col mt-4">
+                                    <input type="number" name="link" value="" id="link" class="form-control" placeholder="Contact No" required />
+                                </div>
+                            </div>
+                          
+
+                            <div class="row align-items-center">
+                                <div class="form-group">
+                                    <div class="col mt-4">
+                                        <textarea class="form-control" rows="3" name="bio" id="bio" placeholder="Address :" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                          
 
                             <br>
                         
@@ -150,7 +155,7 @@
                     </div>
                     <div class="col-md-2 col-sm-2"></div> -->
                     <div class="col-md-12">
-                        <p>Fr. Timm Memorial Programming Contest - 1.0</p>
+                        <p>Fr. Timm Memorial Programming Contest - 2020</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +183,7 @@
                         <li type="disc">Participants have to participate individually.</li>
                         <li type="disc">The Contest will follow the format of IOI.</li>
                         <li type="disc">Participants can use only c,c++ and python programming language.</li>
-                        <li type="disc">The contest platform will be <a href="https://toph.co/" type="_blank">“Toph”</a>. </li>
+                        <li type="disc">The contest platform will be “Toph”. </li>
                         <li type="disc">Participants have to participate in the contest using the custom handle.</li>
                         <li type="disc">Custom handles will be given to participants via email.</li>
                         <li type="disc">The contest will last for 4 hours(10:00 AM - 2:00 PM).</li>
@@ -292,6 +297,23 @@
             });
         }
 </script>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
 
   </body>
